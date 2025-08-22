@@ -1,5 +1,11 @@
 # Тестовое задание
 
+Ссылка на репозиторий
+https://github.com/DevelSam/gooddelo-test
+
+Ссылка на демо
+https://gooddelo-test.vercel.app/
+
 Для запуска проекта необходимо выполнить команды:
 ```bash
 npm install
