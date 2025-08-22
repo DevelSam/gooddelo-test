@@ -1,12 +1,27 @@
-# React + Vite
+# Тестовое задание
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ссылка на репозиторий
+https://github.com/DevelSam/gooddelo-test
 
-Currently, two official plugins are available:
+Ссылка на демо
+https://gooddelo-test.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Для запуска проекта необходимо выполнить команды:
+```bash
+npm install
+npm run start
+```
+Для настройки .env окружения создайте файл .env в корне проекта и добавьте следующие переменные:
+```
+VITE_WAQI_BASE_URL = https://api.waqi.info
+VITE_WAQI_TOKEN = ВАШ_ТОКЕН //Замените на ваш токен получить который можно на https://waqi.info
+VITE_SENSOR_COMMUNITY_BASE_URL  = https://data.sensor.community/static/v1/data.json
+```
+Выполненные уровни
+```
+А - 1,2,3,4,5
+B - 1,3
+C - 2
+```
+Примерное время выполнения
+~5 часов
