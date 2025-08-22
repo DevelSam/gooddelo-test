@@ -26,7 +26,7 @@ const MethricsCard = ({ data }) => {
           <div key={el.key} className={styles.methricsBlock}>
             <p className={styles.title}>
               {' '}
-              {el.value !== undefined && !isNaN(Number(el.value)) ? Number(el.value).toFixed(1) : '—'} {el.unit}
+              {el.value !== undefined && !isNaN(Number(el.value)) ? Math.floor(Number(el.value)) : '—'} {el.unit}
             </p>
             <p className={styles.text}>{el.label}</p>
           </div>
