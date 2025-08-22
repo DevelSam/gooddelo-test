@@ -5,7 +5,9 @@ const CarbonCard = ({ aqi }) => {
   const [data, setData] = useState({})
 
   useEffect(() => {
-    if (aqi > 100 && aqi < 150) {
+    if (aqi == null || aqi == undefined) {
+      setData({ text: 'Нет данных', subText: ' ', color: 'white' })
+    } else if (aqi > 100 && aqi < 150) {
       setData({ text: 'Душнила предупреждает вас', subText: 'Co2 повышен', color: 'orange' })
     } else if (aqi > 150) {
       setData({ text: `Душнила недоволен вами`, subText: 'Co2 Превышает норму', color: 'rgba(255, 138, 122, 1)' })
