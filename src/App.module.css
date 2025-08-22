@@ -1,0 +1,117 @@
+
+.section{
+    padding: 20px 40px;
+    
+}
+.title{
+  font-size: 37px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 47px;
+  text-transform: uppercase;
+  margin-bottom: 33px;
+  text-box: trim-both cap alphabetic;
+
+}
+
+.wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+/* Левая колонка (CarbonCard + DaysCard + ImageCard) */
+.leftWrapper {
+  width: 38.8%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.CardWrappers {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-grow: 1;
+}
+
+.CardWrappers > div {
+  flex:  1;
+  min-width: 0;
+}
+.rightWrapper > div{
+    flex:  1;
+  min-width: 0;
+}
+.loading{
+  text-align: center;
+  font-size: 42px;
+}
+.rightWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+.errorBlock{
+  max-width: 600px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  padding:40px 80px;
+  margin: 0 auto;
+}
+.errorText{
+  font-size: 32px;
+  text-align: center;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .section{
+    padding: 0;
+    padding-top: 29px;
+  }
+  .title{
+    font-size: 37px;
+    margin-bottom: 24px;
+    letter-spacing: 18.5px;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "carbon"
+      "right"
+      "days"
+      "image";
+    gap: 0px;
+    margin-bottom: 20px;
+  }
+
+  
+  .leftWrapper,
+  .CardWrappers {
+    display: contents; 
+  }
+
+
+  .cardCarbon   { grid-area: carbon; }
+  .rightWrapper { grid-area: right; }
+  .cardDays     { grid-area: days; }
+  .cardImage    { grid-area: image; }
+
+  .cardDays,
+  .cardImage,
+  .rightWrapper,
+  .cardCarbon {
+    width: 100%;
+  }
+  .CardWrappers > div {
+  width: 100%;
+}
+}

@@ -1,0 +1,23 @@
+.button {
+  width: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  grid-row: 500;
+  letter-spacing: -1.5px;
+  padding: 15px 30px;
+  border-radius: 100px;
+  border: 1px solid white;
+  transition: all 0.3s;
+  cursor: pointer;
+  text-box: trim-both cap alphabetic;
+}
+.button:hover {
+  background-color: black;
+  color: white;
+}
+.button:hover .arrow {
+  stroke: white;
+}

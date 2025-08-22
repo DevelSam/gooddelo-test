@@ -1,0 +1,57 @@
+.Card {
+  padding: 60px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50vh;
+  color: black;
+}
+.text {
+  font-size: 89px;
+  font-weight: 500;
+  letter-spacing: -5.3px;
+  text-box: trim-both cap alphabetic;
+  line-height: 110%;
+}
+.subText {
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 6px;
+  line-height: 100%;
+  text-box: trim-both cap alphabetic;
+}
+.emoji {
+  width: 89px;
+  text-align: center;
+  align-self: center;
+  vertical-align: top;
+  margin-left: 15px;
+}
+@media (max-width: 768px) {
+  .Card {
+    padding-top: 15px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 70px;
+    border-radius: 0;
+    height: auto;
+    justify-content: flex-start;
+    gap: 80px;
+  }
+  .text {
+    font-size: 50px;
+    letter-spacing: -3px;
+    line-height: 100%;
+  }
+  .subText {
+    margin-bottom: 0;
+  }
+  .emoji {
+    width: 50px;
+    text-align: center;
+    align-self: center;
+    vertical-align: top;
+    margin-left: 10px;
+  }
+}
